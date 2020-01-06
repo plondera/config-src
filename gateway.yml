@@ -12,30 +12,22 @@ eureka:
 
 zull:
   routes:
-    book-service:
-      path: /book-service/**
+    patient-service:
+      path: /patient-service/**
       sensitive-headers: Set-Cookie,Authorization
-    rating-service:
-      path: /rating-service/**
-      sensitive-headers: Set-Cookie,Authorization
-    eureka:
+    eureka-server:
       path: /eureka/**
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8082
 
 hystrix:
   command:
-    book-service:
+    patient-service:
       execution:
         isolation:
           thread:
             timeoutInMilliseconds: 600000
-    rating-service:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
-    eureka:
+    eureka-server:
       execution:
         isolation:
           thread:
