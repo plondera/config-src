@@ -12,23 +12,32 @@ eureka:
 
 zull:
   routes:
-    patient-service:
-      path: /patient-service/**
-      sensitive-headers: Set-Cookie,Authorization
     eureka-server:
       path: /eureka/**
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8082
+    patient-service:
+      path: /patient-service/**
+      sensitive-headers: Set-Cookie,Authorization
+    result-service:
+      path: /result-service/**
+      sensitive-headers: Set-Cookie,Authorization
 
 hystrix:
   command:
-    patient-service:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000
     eureka-server:
       execution:
         isolation:
           thread:
             timeoutInMilliseconds: 600000
+    patient-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
+    result-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
+    
