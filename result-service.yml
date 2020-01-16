@@ -13,5 +13,4 @@ eureka:
 dynamo:
   region: eu-central-1
   table:
-    name: result_patient
-
+    name: patient_replica
