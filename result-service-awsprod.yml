@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: result-service
+
+server:
+  port: 8084
+   
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+
+dynamo:
+  region: eu-central-1
+  table:
+    name: patient_replica
+
+lambda:
+  url: https://9hrkk3013d.execute-api.eu-central-1.amazonaws.com/default/
