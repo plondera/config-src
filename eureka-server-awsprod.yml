@@ -8,9 +8,9 @@ server:
   
 eureka:
   instance:
-    hostname: localhost
+    hostname: ec2-52-28-53-199.eu-central-1.compute.amazon
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://ec2-52-28-53-199.eu-central-1.compute.amazon:8082/eureka/
     registerWithEureka: false
     fetchRegistry: false
