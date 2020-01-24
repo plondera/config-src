@@ -7,6 +7,8 @@ server:
   port: 8082
   
 eureka:
+  region: eu-central-1
+  eu-central-1.availabilityZones: eu-central-1a,eu-central-1b,eu-central-1c
   instance:
     hostname: ec2-52-28-53-199.eu-central-1.compute.amazon
     preferIpAddress: true
@@ -15,4 +17,3 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
