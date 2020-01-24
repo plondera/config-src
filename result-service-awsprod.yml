@@ -8,7 +8,7 @@ server:
    
 eureka:
   client:
-    region: default
+    region: eu-central-1
     registryFetchIntervalSeconds: 5
 
 dynamo:
