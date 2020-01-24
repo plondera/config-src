@@ -10,6 +10,8 @@ eureka:
   client:
     region: eu-central-1
     registryFetchIntervalSeconds: 5
+  instance:
+    preferIpAddress: true
 
 dynamo:
   region: eu-central-1
