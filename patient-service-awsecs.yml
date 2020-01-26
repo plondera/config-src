@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: patient-service
+
+server:
+  port: 8083
+   
+eureka:
+  client:
+    region: eu-central-1
+    registryFetchIntervalSeconds: 5
+
+dynamo:
+  region: eu-central-1
+  table:
+    name: patient
+    
