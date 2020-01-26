@@ -7,11 +7,11 @@ server:
   
 eureka:
   instance:
-    hostname: ${eureka_host}
+    hostname: ${config_host}
   client:
     region: eu-central-1
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka_host}:${eureka_port}/eureka/
+      defaultZone: http://${config_host}:${eureka_port}/eureka/
       
