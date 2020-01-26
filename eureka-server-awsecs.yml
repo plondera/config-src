@@ -8,6 +8,7 @@ server:
 eureka:
   instance:
     hostname: ${config_host}
+    preferIpAddress: true
   client:
     region: eu-central-1
     registerWithEureka: false
