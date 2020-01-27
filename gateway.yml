@@ -7,7 +7,7 @@ server:
    
 eureka:
   client:
-    region: default
+    region: eu-central-1
     registryFetchIntervalSeconds: 5
 
 zull:
@@ -15,7 +15,7 @@ zull:
     eureka-server:
       path: /eureka/**
       sensitive-headers: Set-Cookie,Authorization
-      url: http://localhost:8082
+      url: http://${eureka_host}:${eureka_host}
     patient-service:
       path: /patient-service/**
       sensitive-headers: Set-Cookie,Authorization
